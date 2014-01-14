@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.platform          = Gem::Platform::RUBY
-  s.name              = 'refinerycms-image-slideshows'
+  s.name              = 'refinerycms-image_slideshows'
   s.authors           = ['Jim Pruetting']
   s.email             = 'jim@roboticmethod.com'
   s.homepage          = 'http://refinerycms.com'
