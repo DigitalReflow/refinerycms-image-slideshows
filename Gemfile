@@ -2,8 +2,8 @@ source "http://rubygems.org"
 
 gemspec
 
-gem 'refinerycms', '~> 2.0.3'
-gem 'refinerycms-i18n', '~> 2.0.2'
+gem 'refinerycms', '~> 2.1.0'
+gem 'refinerycms-i18n'
 
 # Database Configuration
 platforms :jruby do
@@ -20,7 +20,7 @@ platforms :ruby do
 end
 
 group :development, :test do
-  gem 'refinerycms-testing', '~> 2.0.3'
+  gem 'refinerycms-testing'
   gem 'guard-rspec', '~> 0.7.0'
 
   platforms :mswin, :mingw do
@@ -64,9 +64,9 @@ end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails'
-  gem 'coffee-rails'
-  gem 'uglifier'
+  gem 'sass-rails', '~> 3.2.3'
+  gem 'coffee-rails', '~> 3.2.1'
+  gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails', '~> 2.0.0'
+gem 'jquery-rails'
