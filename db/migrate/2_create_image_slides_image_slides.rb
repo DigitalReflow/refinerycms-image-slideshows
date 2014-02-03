@@ -3,6 +3,7 @@ class CreateImageSlidesImageSlides < ActiveRecord::Migration
   def up
     create_table :refinery_image_slides do |t|
       t.string :title
+      t.integer :title_as_image_id
       t.integer :position
       t.integer :image_slideshow_id
 
