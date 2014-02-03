@@ -7,6 +7,7 @@ module Refinery
 
         before_filter :find_image_slideshow
         before_filter :find_image_slide, :except => [:index, :new]
+        before_filter :populate_positions
 
         def index
           find_image_slides
@@ -57,6 +58,10 @@ module Refinery
 
         def find_image_slides
           @image_slides = @image_slideshow.image_slides.order(:position) if @image_slideshow.present?
+        end
+        
+        def populate_positions
+          @positions = %w(top-left top-right bottom-left bottom-right)
         end
 
       end
