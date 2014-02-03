@@ -21,11 +21,11 @@
   </div>
   
     <div class='field'>
-    <%= f.label :title_as_image_id, 'Image' %>
+    <%= f.label :title_as_image_id, 'Title as Image' %>
     <%= render :partial => '/refinery/admin/image_picker', :locals => {
       :f => f,
       :field => :title_as_image_id,
-      :image => @image_slide.title_as_image,
+      :image => @image_slide.title_as_image_id,
       :thumbnail => ''
     } %>
   </div>
