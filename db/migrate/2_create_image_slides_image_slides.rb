@@ -8,6 +8,8 @@ class CreateImageSlidesImageSlides < ActiveRecord::Migration
       t.integer :position
       t.integer :image_slideshow_id
       t.integer :image_id
+      t.text    :caption
+      t.string  :caption_position
       t.timestamps
     end
 
