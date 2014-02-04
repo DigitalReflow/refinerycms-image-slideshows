@@ -8,6 +8,7 @@ module Refinery
         before_filter :find_image_slideshow
         before_filter :find_image_slide, :except => [:index, :new]
         before_filter :populate_positions
+        before_filter :populate_caption_colors
 
         def index
           find_image_slides
@@ -62,6 +63,10 @@ module Refinery
         
         def populate_positions
           @positions = %w(top-left top-right bottom-left bottom-right)
+        end
+        
+        def populate_caption_colors
+          @colors =%w(black white)
         end
 
       end
