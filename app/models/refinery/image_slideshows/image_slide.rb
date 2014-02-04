@@ -12,6 +12,7 @@ module Refinery
 
       belongs_to :image_slideshow
       belongs_to :image
+      belongs_to :title_as_image, :class_name => '::Refinery::Image'
 
     end
   end
