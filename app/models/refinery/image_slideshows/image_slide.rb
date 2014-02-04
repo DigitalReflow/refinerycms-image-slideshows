@@ -11,7 +11,7 @@ module Refinery
       #validates :image_id, :presence => true
 
       belongs_to :image_slideshow
-      belongs_to :image
+      belongs_to :image, :class_name => '::Refinery::Image'
       belongs_to :title_as_image, :class_name => '::Refinery::Image'
 
     end
