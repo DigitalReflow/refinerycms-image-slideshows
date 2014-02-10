@@ -62,7 +62,7 @@ module Refinery
         end
         
         def populate_positions
-          @positions = %w(top-left top-right bottom-left bottom-right)
+          @positions = %w(top-left top-right bottom-left bottom-right center-center)
         end
         
         def populate_caption_colors
