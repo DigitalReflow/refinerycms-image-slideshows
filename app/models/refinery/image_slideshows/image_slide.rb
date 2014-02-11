@@ -14,6 +14,8 @@ module Refinery
       belongs_to :image, :class_name => '::Refinery::Image'
       belongs_to :title_as_image, :class_name => '::Refinery::Image'
 
+      default_scope order('position asc')
+
     end
   end
 end
