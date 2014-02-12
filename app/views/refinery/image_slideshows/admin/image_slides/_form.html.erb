@@ -20,6 +20,26 @@
     } %>
   </div>
 
+  <div class='field'>
+    <%= f.label :tablet_image_id, 'Tablet image' %>
+    <%= render :partial => '/refinery/admin/image_picker', :locals => {
+      :f => f,
+      :field => :tablet_image_id,
+      :image => @image_slide.tablet_image,
+      :thumbnail => ''
+    } %>
+  </div>
+
+  <div class='field'>
+    <%= f.label :mobile_image_id, 'Mobile image' %>
+    <%= render :partial => '/refinery/admin/image_picker', :locals => {
+      :f => f,
+      :field => :mobile_image_id,
+      :image => @image_slide.mobile_image,
+      :thumbnail => ''
+    } %>
+  </div>
+
     <div class='field'>
     <%= f.label :title_as_image_id, 'Title as Image' %>
     <%= render :partial => '/refinery/admin/image_picker', :locals => {
