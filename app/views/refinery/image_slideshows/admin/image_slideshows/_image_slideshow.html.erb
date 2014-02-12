@@ -2,8 +2,6 @@
   <span class='title'>
     <%= link_to refinery.image_slideshows_admin_image_slideshow_image_slides_path(image_slideshow) do %>
       <%= image_slideshow.title %> Slideshow
-      | Client: <%= ::Refinery::Clients::Client.find(image_slideshow.client_id).try(:name) %>
-      | Page: <%= ::Refinery::Page.find(image_slideshow.page_id).try(:title) %>
     <% end %>
   </span>
   <span class='actions'>
