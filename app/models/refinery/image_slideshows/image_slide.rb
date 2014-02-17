@@ -7,8 +7,7 @@ module Refinery
 
       acts_as_indexed :fields => [:title]
 
-      validates :title, :presence => true
-      #validates :image_id, :presence => true
+      validates :title, :presence => true, :uniqueness => true
 
       belongs_to :image_slideshow
       belongs_to :image, :class_name => '::Refinery::Image'
