@@ -54,6 +54,11 @@
     <%= f.label :title_as_image_position -%>
     <%= f.select :title_as_image_position, options_for_select(@positions, @image_slide.title_as_image_position) %>
   </div>
+  
+  <div class='field'>
+    <%= f.label :title_as_image_next_link -%>
+    <%= f.check_box :title_as_image_next_link %>
+  </div>
 
   <div class='field'>
     <%= f.label :caption -%>
