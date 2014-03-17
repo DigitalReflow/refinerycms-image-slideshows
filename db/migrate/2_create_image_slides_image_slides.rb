@@ -5,6 +5,7 @@ class CreateImageSlidesImageSlides < ActiveRecord::Migration
       t.string  :title
       t.integer :title_as_image_id
       t.string  :title_as_image_position
+      t.boolean :title_as_image_next_link
       t.integer :position
       t.integer :image_slideshow_id
       t.integer :image_id
