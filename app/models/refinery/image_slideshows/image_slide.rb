@@ -3,7 +3,7 @@ module Refinery
     class ImageSlide < Refinery::Core::BaseModel
       self.table_name = 'refinery_image_slides'
 
-      attr_accessible :title, :title_as_image_id, :title_as_image_position, :tablet_image_id, :mobile_image_id, :image_id, :caption, :caption_color, :position, :image_slideshow_id
+      attr_accessible :title, :title_as_image_id, :title_as_image_position, :title_as_image_next_link, :tablet_image_id, :mobile_image_id, :image_id, :caption, :caption_color, :position, :image_slideshow_id
 
       acts_as_indexed :fields => [:title]
 
